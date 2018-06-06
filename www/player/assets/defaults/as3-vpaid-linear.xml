@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VAST version="2.0" xmlns:MM="http://api.mediamind.com/V1/DataContracts">
+    <Ad id="10724976">
+        <InLine>
+            <AdSystem>
+                <![CDATA[MediaMind]]>
+            </AdSystem>
+            <AdTitle>
+                <![CDATA[maorGoodVpaid_1]]>
+            </AdTitle>
+            <Description>
+                <![CDATA[maorGoodVpaid_1]]>
+            </Description>
+            <Impression id="Impression">
+                <![CDATA[http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=riis&pl=VAST&optOut=0&pos=5124&c=24&ai=23214473&pluid=0&ord=116345652&dg=-1&ta=-1&sessionid=3748242672331233015&pcp=&vurl=]]>
+            </Impression>
+            <Creatives>
+                <Creative id="23214473" AdID="23214473" sequence="1">
+                    <Linear>
+                        <Duration>00:00:20</Duration>
+                        <TrackingEvents />
+                        <MediaFiles>
+                            <MediaFile id="90478392" height="480" width="640" type="application/x-shockwave-flash" delivery="progressive" maintainAspectRatio="true" scalable="true" apiFramework="VPAID">
+                                <![CDATA[http://ds.serving-sys.com/BurstingScript/VPAIDBase.swf?sessionid=3748242672331233015&adData=http://ds.serving-sys.com/BurstingRes/Site-92162/Type-24/23214473_b906a602-5e70-47f0-b47a-eb9ce110e028_AdData.xml&adWidth=640&adHeight=480&ResourceID=90478392&isPreview=false&adPart=1&videoSync=false&standardAdRemaining=false&optOut=0&ds_host=http://ds.serving-sys.com/BurstingRes/&reportPageURL=true&vURL_Enabled=0&vv=false&adext=openVV]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+                <Creative id="23214473" AdID="23214473" sequence="1">
+                    <CompanionAds>
+
+
+
+
+                        <Companion id="90633142" height="480" width="640">
+                            <StaticResource creativeType="application/x-shockwave-flash">
+                                <![CDATA[http://ds.serving-sys.com/BurstingScript/VASTLoader.swf?sessionid=3748242672331233015&adData=http://ds.serving-sys.com/BurstingRes/Site-92162/Type-24/23214473_b906a602-5e70-47f0-b47a-eb9ce110e028_AdData.xml&adWidth=640&adHeight=480&ResourceID=90633142&isPreview=false&adPart=3&optOut=0&ds_host=http://ds.serving-sys.com/BurstingRes/]]>
+                            </StaticResource>
+                        </Companion>
+
+
+
+                        <Companion id="19099438" height="250" width="300">
+                            <StaticResource creativeType="image/jpeg">
+                                <![CDATA[http://ds.preview.serving-sys.com/BurstingRes/Site-40427/Type-0/491125b7-68be-4575-8594-8d642eaf762c.jpg]]>
+                            </StaticResource>
+                            <CompanionClickThrough>
+                                <![CDATA[http://bs.preview.serving-sys.com/BurstingPipe/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=22891613%7E%7E0%5EClick.Companion.19099438%7E0%7E1%7E1%7E0%7E0%7E%7E0&pos=1764&ebRandom=67195416&dg=-1&ta=-1&sessionid=8733902931301442614&rtu=$$http://google.com$$]]>
+                            </CompanionClickThrough>
+                            <TrackingEvents>
+                                <Tracking event="creativeView">
+                                    <![CDATA[http://bs.preview.serving-sys.com/BurstingPipe/adServer.bs?cn=isi&pl=VAST&optOut=0&interactionsStr=22891613%7E%7E0%5ECreativeView.Companion.19099438%7E0%7E0%7E1%7E0%7E0%7E%7E0&pos=1764&ebRandom=67195416&dg=-1&ta=-1&sessionid=8733902931301442614pr=1]]>
+                                </Tracking>
+                            </TrackingEvents>
+                        </Companion>
+
+
+
+                        <Companion id="67675473" height="400" width="400">
+                            <StaticResource creativeType="application/x-shockwave-flash">
+                                <![CDATA[http://ds.serving-sys.com/BurstingScript/VASTLoader.swf?sessionid=8733902931301442614&adData=http://ds.preview.serving-sys.com/BurstingRes/Site-40427/Type-24/22891613_8adb817f-e9cc-4406-b026-e3b81d013552_AdData_pr.xml&adWidth=400&adHeight=400&ResourceID=67675473&isPreview=true&adPart=3&optOut=0&ds_host=http://ds.preview.serving-sys.com/BurstingRes/]]>
+                            </StaticResource>
+                        </Companion>
+
+
+
+                    </CompanionAds>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

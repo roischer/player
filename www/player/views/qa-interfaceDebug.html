@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Sizmek | Instream Player</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<link rel="stylesheet" type="text/css" href="../styles/instream-qa-interface.css"/>
+<script type="text/javascript" src="../lib/vkbeautify/vkbeautify.js"></script>
+<script type="text/javascript" src="../lib/sizmek/debug/instream-qa-interface.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <div id="header">
+        <img id="logo" src="../assets/images/sizmek-logo.png"/>
+        <div id="submit-btn" class="btn">SUBMIT</div>
+        <div id="reset-btn" class="btn">RESET</div>
+    </div>
+
+    <div id="player-container">
+        <div id="player">
+            <iframe id="player-iframe" frameBorder="0" seamless="seamless"></iframe>
+        </div>
+    </div>
+
+    <div id="sections-nav">
+
+        <div id="ad-config-btn" class="inactive">AD CONFIG</div>
+        <div id="player-config-btn" class="inactive">PLAYER CONFIG</div>
+        <div id="ad-data-btn" class="inactive">AD DATA</div>
+        <div id="ad-reporting-btn" class="inactive">REPORTING</div>
+        <div id="ad-companion-btn" class="inactive">COMPANION</div>
+
+    </div>
+
+    <div id="sections">
+
+        <div id="ad-config" class="section inactive">
+            <div class="content">
+                <div class="item">
+                    <div class="label">Linear Preroll</div>
+                    <input id="ad-pre" class="text-field" type="text" placeholder="Offset: video start"/>
+                </div>
+                <div class="item">
+                    <div class="label">Linear Midroll</div>
+                    <input id="ad-mid" class="text-field" type="text" placeholder="Offset: 4 seconds"/>
+                </div>
+                <div class="item">
+                    <div class="label">Linear Postroll</div>
+                    <input id="ad-post" class="text-field" type="text" placeholder="Offset: video end"/>
+                </div>
+                <div class="item">
+                    <div class="label">Non-Linear Overlay</div>
+                    <input id="ad-over" class="text-field" type="text" placeholder="Offset: 8 seconds"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="player-config" class="section inactive">
+            <div class="content">
+                <div class="item">
+                    <div class="label">Type </div>
+                    <select id="player-type" class="select">
+                        <option value="as3">Flash (as3) </option>
+                        <option value="html5">Html5</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <div class="label">Width </div>
+                    <input id="player-width" class="text-field" type="text" />
+                </div>
+                <div class="item">
+                    <div class="label">Height </div>
+                    <input id="player-height" class="text-field" type="text" />
+                </div>
+                <div class="item">
+                    <div class="label">Controls </div>
+                    <select id="player-controls" class="select">
+                        <option value="over">Overlay</option>
+                        <option value="below">Below</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <div class="label">Auto-start </div>
+                    <select id="player-auto-start" class="select">
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <div class="label">Allow Script Access  </div>
+                    <select id="player-script-access" class="select">
+                        <option value="always">Always</option>
+                        <option value="same">Same Domain</option>
+                        <option value="never">Never</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <div class="label">Wmode  </div>
+                    <select id="player-wmode" class="select">
+                        <option value="opaque">Opaque</option>
+                        <option value="window">Window</option>
+                        <option value="trans">Transparent</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="ad-reporting" class="section inactive">
+            <div class="content">
+                <div class="column">
+                    <div class="item">
+                        <div id="impression" class="count">0</div>
+                        <span class="label">impression</span>
+                    </div>
+                    <div class="item">
+                        <div id="creativeView" class="count">0</div>
+                        <span class="label">creativeView</span>
+                    </div>
+                    <div class="item">
+                        <div id="start" class="count">0</div>
+                        <span class="label">start</span>
+                    </div>
+                    <div class="item">
+                        <div id="firstQuartile" class="count">0</div>
+                        <span class="label">firstQuartile</span>
+                    </div>
+                    <div class="item">
+                        <div id="midpoint" class="count">0</div>
+                        <span class="label">midpoint</span>
+                    </div>
+                    <div class="item">
+                        <div id="thirdQuartile" class="count">0</div>
+                        <span class="label">thirdQuartile</span>
+                    </div>
+                    <div class="item">
+                        <div id="complete" class="count">0</div>
+                        <span class="label">complete</span>
+                    </div>
+                    <div class="item">
+                        <div id="progress" class="count">0</div>
+                        <span class="label">progress</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <div id="mute" class="count">0</div>
+                        <span class="label">mute</span>
+                    </div>
+                    <div class="item">
+                        <div id="unmute" class="count">0</div>
+                        <span class="label">unmute</span>
+                    </div>
+                    <div class="item">
+                        <div id="pause" class="count">0</div>
+                        <span class="label">pause</span>
+                    </div>
+                    <div class="item">
+                        <div id="resume" class="count">0</div>
+                        <span class="label">resume</span>
+                    </div>
+                    <div class="item">
+                        <div id="skip" class="count">0</div>
+                        <span class="label">skip</span>
+                    </div>
+                    <div class="item">
+                        <div id="skipStateChange" class="count">0</div>
+                        <span class="label">skipStateChange</span>
+                    </div>
+                    <div class="item">
+                        <div id="close" class="count">0</div>
+                        <span class="label">close</span>
+                    </div>
+                    <div class="item">
+                        <div id="fullscreen" class="count">0</div>
+                        <span class="label">fullscreen</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <div id="clickTracking" class="count">0</div>
+                        <span class="label">clickTracking</span>
+                    </div>
+                    <div class="item">
+                        <div id="interaction" class="count">0</div>
+                        <span class="label">interaction</span>
+                    </div>
+                    <div class="item">
+                        <div id="expand" class="count">0</div>
+                        <span class="label">expand</span>
+                    </div>
+                    <div class="item">
+                        <div id="collapse" class="count">0</div>
+                        <span class="label">collapse</span>
+                    </div>
+                    <div class="item">
+                        <div id="acceptInvitation" class="count">0</div>
+                        <span class="label">acceptInvitation</span>
+                    </div>
+                    <div class="item">
+                        <div id="error" class="count">0</div>
+                        <span class="label">error</span>
+                    </div>
+                    <div class="item">
+                        <div id="exitFullscreen" class="count">0</div>
+                        <span class="label">exitFullscreen</span>
+                    </div>
+                    <div class="item">
+                        <div id="adDurationChange" class="count">0</div>
+                        <span class="label">adDurationChange</span>
+                    </div>
+                </div>
+                <div id="html5Column" class="html5Column">
+                    <div class="item">
+                        <div id="getVolume" class="count">-1</div>
+                        <span class="label">getvolume</span>
+                    </div>
+                    <div class="item">
+                        <div id="adDuration" class="count">-1</div>
+                        <span class="label">adDuration</span>
+                    </div>
+                    <div class="item">
+                        <div id="adRemainingTime" class="count">-1</div>
+                        <span class="label">adRemainingTime</span>
+                    </div>
+                     <div class="item">
+                        <div id="stopStateChange" class="count">0</div>
+                        <span class="label">stopStateChange</span>
+                    </div>
+                     <div class="item">
+                        <div id="adSizeChange" class="count">0</div>
+                        <span class="label">adSizeChange</span>
+                    </div>
+                    <div class="item">
+                        <div id="adWidth" class="count">0</div>
+                        <span class="label">adWidth</span>
+                    </div>
+                     <div class="item">
+                        <div id="adHeight" class="count">0</div>
+                        <span class="label">adHeight</span>
+                    </div>
+                    <div class="item">
+                        <div id="adIcon" class="count">0</div>
+                        <span class="label">adIcon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ad-data" class="section inactive">
+            <div class="content">Waiting for ad data...</div>
+        </div>
+
+        <div id="ad-companion" class="section inactive">
+            <div class="content">Waiting for companion ad(s)...</div>
+        </div>
+
+    </div>
+
+    <div id="footer">v.1.3</div>
+
+</div>
+
+</body>
+
+</html>

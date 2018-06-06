@@ -1,0 +1,251 @@
+
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    background-color: rgb(244, 240, 240);
+}
+
+#header
+{
+    background-color: #0068ff;
+    height: 50px;
+}
+
+#logo
+{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+
+#player-container
+{
+    background-color: #262626;
+}
+
+#player
+{
+    width: 640px;
+    height: 360px;
+    background-color: black;
+    margin: 0px auto;
+}
+
+#player iframe
+{
+    width: 100%;
+    height: 100%;
+}
+
+#header .btn
+{
+    width: 115px;
+    height: 32px;
+    padding-top: 18px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+#header .btn:hover
+{
+    background-color: #0d2a4d;
+    color: #0068ff;
+}
+
+#header .btn.click
+{
+    background-color: #0d2a4d;
+    color: #faf000;
+}
+
+#reset-btn
+{
+    border-left: 1px solid #2F8DFF;
+    border-right: 1px solid #2F8DFF;
+}
+
+.text-field
+{
+    padding: 5px;
+}
+
+#sections-nav
+{
+    background-color: #0068ff;
+    display: table;
+    width: 100%;
+}
+
+#sections-nav div
+{
+    display: table-cell;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    width: 20%;
+    vertical-align: middle;
+    border-right: 1px solid #9A9A9A;
+}
+
+#sections-nav div.active
+{
+    background-color: #5B5B5B;
+    color: #D8D8D8;
+}
+
+#sections-nav div.inactive
+{
+    color: #5B5B5B;
+    background-color: rgb(193, 193, 193);
+}
+
+
+#sections-nav div.inactive:hover
+{
+    background-color: #5B5B5B;
+    color: #D8D8D8;
+}
+
+#sections
+{
+    min-height: 500px;
+}
+
+.section.active
+{
+    height: auto;
+    padding: 20px;
+}
+
+.section.inactive
+{
+    overflow: hidden;
+    height: 0;
+}
+
+.section .label
+{
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+    color: rgb(62, 62, 62);
+}
+
+.section select
+{
+    width: 150px;
+}
+
+
+#ad-config input
+{
+    width: 65%;
+}
+
+#ad-reporting .item
+{
+    margin: 5px;
+}
+
+#ad-reporting .column
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+}
+
+#ad-reporting .html5Column
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    visibility: hidden;
+}
+
+#ad-reporting .count
+{
+    border: 1px solid rgb(219, 219, 219);
+    min-width: 25px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    padding: 5px 3px 3px 3px;
+    border: 1px solid rgb(174, 174, 174);
+}
+
+#ad-reporting .label
+{
+    width: auto;
+    padding: 5px;
+}
+
+#ad-reporting .commands
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+#ad-reporting .commandHeader
+{
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+#ad-reporting .command
+{
+    width: 20%;
+
+}
+
+#ad-reporting .button
+{
+    background-color: #8F8F8F;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0px;
+    width: 120px;
+    height: 30px;
+   font-weight: bold;
+}
+
+
+}
+
+#ad-data .content
+{
+    padding: 10px;
+    min-height: 250px;
+    overflow: scroll;
+    background-color: white;
+    border: 1px solid silver;
+    font-family: Consolas;
+    word-wrap: break-word;
+}
+
+
+#ad-companion .ad
+{
+    margin-bottom: 10px;
+    border: 1px solid #ACACAC;
+    background-color: white;
+}
+
+#footer
+{
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    color: grey;
+}
